@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2-56837</title>
+		<link href="styles.css" rel="stylesheet" />
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+<body>
+	<div id="vue-app">
+		<h1><!--- HOW TO CALL A FUNCTION WITHIN THE DOM --> {{ greet() }} </h1>
+		<p>Name: {{ name }}</p>
+		<p>Job: {{ job }}</p>
+	</div>
+	<!-- Remember I cannot access any elements outside the div it would just print raw string -->
+	<script src="app.js"></script>
+</body>
+</html>
