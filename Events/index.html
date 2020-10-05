@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <title>VueJS Tutorials</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+   </head>
+   <body>
+      <div id="vue-app">
+            <h1>Events</h1>
+	    <!-- no need to say v-on: I can replace it by @ @ is the shorthand notation for v-on:       -->
+	    <button @click="add(1)">Add A Year</button>
+	    <button @click="subtract(1)"> Remove A Year</button>
+	    <button @dblclick="add(31)">Add C-Lover Years</button>
+	    <button @dblclick="subtract(31)">Subtract C-Lover Years</button>
+	    <p> 2526 47 2 746867 OS and his fav number is {{ age }} and he is a 27-375 FB</p>
+	    <div id="canvas" v-on:mousemove="updateXY">{{ x }} , {{ y }}</div>
+      </div>
+      <script src="app.js"></script>
+   </body>
+</html>
