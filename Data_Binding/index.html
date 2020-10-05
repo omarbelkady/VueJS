@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VueJS Tutorials</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>Data Binding</h1>
+	    <!--To bind I would use the v-bind: to bind  -->
+	    <!-- Telling vue to bind to bind the data with our directive instance in our app.js file-->
+	    <!-- All I have to do now is to supply the name I want to bind to href attribute --> 
+	    <!-- I change a v-bind:href to shorthand notation for binding a:href -->
+	    <!-- <p><a :href="website">2526472PASCAL56837</a></p> -->
+	    <!--<p><a :href="website">2526472027736259056837</a></p>-->
+	    <a v-bind:href="website">2526472027736259056837</a></p>
+	    <!-- <input type="text" value="2526 LOVES ASSEMBLY WAY TOO MUCH AND IS AN CS375 ENthusiast"/>-->
+	    <!-- BINDING THE NAME PROPERTY NOW -->
+	    <input type="text" v-bind:value="name" />
+	    <!-- HOW TO OUPUT THE LINK TO THE DOM USING DIRECTIVE-->
+	    <p v-html="websiteTag"></p>
+	    <p><input type="text" v-bind:value="job" /> </p>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>
