@@ -17,3 +17,6 @@ new Vue({
 	}
 });
 ```
+```
+Any pictures, audio, logos place in your assets folder in your vue proj
+```

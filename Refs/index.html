@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Referencing In VueJS</title>
+		<link href="styles.css" rel="stylesheet">
+		<script src="https://unpkgs.com/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			<h2>Referencing</h2>
+			<!--The way I reference in VueJS is by setting ref equal to whatever name I want to reference to  -->
+			<input type="text" ref="input" />
+			<button v-on:click="readRefere">Submit</button>
+			<p>Your Fav Programming Language is: {{ output }}</p>
+			<div ref="assm">27736259 56837</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
