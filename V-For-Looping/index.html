@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        	<title>For Loop In Vue</title>
+        	<link href="styles.css" rel="stylesheet" />
+        	<script src="https://unpkg.com/vue"></script>
+	</head>
+   	<body>
+
+		<div id="vue-app">
+			<h1> How To Cycle Through Lists Using The V-For Loop AKA FOR LOOP </h1>
+			<!-- Bad Way To Cycle Through IMAGINE IF 1000 ELEMS THEN THIS WOULD BE TEDIOUS
+			{{favLangs[0]}}
+			{{favLangs[1]}
+			{{favLangs[2]}}
+			-->
+			<ul>
+				<!-- Instead of having an li for all three elements I just write what the element-->
+				<li v-for="favlang in favlangs">{{ favlang }}</li>
+			</ul>
+
+			<ul>
+			<!-- HOW TO CYCLE THROUGH EACH PROPERTY IN AN OBJECT-->
+				<li v-for="element in elems">{{ element.name }} - {{ element.hobby }} </li>
+			</ul>
+
+			<!-- HOW TO LOOP USING TEMPLATES -->
+			<template v-for="(elem) in elems">
+				<h3>{{ elem.name }} </h3>
+				<p>{{ elem.hobby }}</p>
+
+			</template>
+
+			<!-- HOW TO LOOP THROUGH OBJECTS -->
+			<template v-for="elem in elems">
+				<div v-for="(value,key) in elem">
+					<p>{{ key }} - {{ value }}</p>
+				</div>
+			</template>
+
+
+		</div>
+	</body>
+
+	<script src="app.js"></script>
+</html>

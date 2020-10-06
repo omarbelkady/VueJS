@@ -1,0 +1,20 @@
+new Vue({
+	el: '#vue-app',
+	data: {
+		available: false,
+		nearby: false
+	},
+	methods:{
+	 
+	},
+
+	computed: {
+		compClasses: function(){
+			return{
+				/*First object to pass through*/
+				available: this.available,
+				nearby: this.nearby,
+			}
+		}
+	}
+});

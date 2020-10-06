@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        	<title>CSS Classes AND 2526 47 2 27-375 FB</title>
+        	<link href="styles.css" rel="stylesheet" />
+        	<script src="https://unpkg.com/vue"></script>
+	</head>
+   	<body>
+
+		<div id="vue-app">
+	   		<h1>Dynamic CSS</h1>
+			<h2>The first example</h2>
+			<!-- This basically means when it is true I want the css property to have access 
+	  		and when it is false I do not want it to have access
+			and adding a click event to it-->
+			<!-- Swaps availability when I click it-->
+			<!--
+			<div v-on:click="available= !available" v-bind:class="{available:available}"></div>
+				When available this will be styled to Green
+				<span>LovesPascal</span>
+			-->
+			<h2>Second Example</h2>
+			<button v-on:click="nearby = !nearby">Nearby On</button>
+			<button v-on:click="available = !available">Available On</button>
+		
+			<div v-bind:class="compClasses">
+				<span>2526 47 26 27736259 56837</span>
+			</div>
+		</div>
+	</body>
+
+	<script src="app.js"></script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <title>Computed CS375 FB Props</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+   </head>
+   <body>
+
+	   <div id="vue-app">
+		<h1>Computed Props</h1>
+		<button v-on:click="a++">Adding 1 To A</button>
+		<button v-on:click="b++">Adding 1 To B</button>
+		<p>2526 47 2 727225 56837</p>
+		<p>A - {{ a }}</p>
+		<p>B - {{ b }}</p>
+		<!-- Now that I removed the parenthesis it will look for addToA computed property and andToB
+		computed property -->
+		<p>Age + A = {{ addToA }}</p>
+		<p>Age + B = {{ addToB }}</p>
+	   </div>
+
+      <script src="app.js"></script>
+   </body>
+</html>

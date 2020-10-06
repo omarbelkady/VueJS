@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        	<title>Conditionals in Vue</title>
+        	<link href="styles.css" rel="stylesheet" />
+        	<script src="https://unpkg.com/vue"></script>
+	</head>
+   	<body>
+
+		<div id="vue-app">
+			<h1>Conditionals in Vue</h1>
+			<!--Giving both buttons a click event when clicked either false or true-->
+			<button v-on:click="error=!error">Raise  Error</button>
+			<button v-on:click="success=!success">Raise Success</button>
+			<!--	<p v-if="error">Error Raised 2526 56837 727225</p>-->
+			<!-- When clicked upon either adds it or removes it from the DOM -->
+			<!-- instead of them both showing I replace v-if with v-else-if
+			<p v-if="success">Success ....  2526 56837 LLP</p>
+			-->
+			<!--Only if v-if is false will it display the below code -->
+		<!--	<p v-else-if="success">Success ....  2526 56837 LLP</p>-->
+			<!-- Toggle Success First First -->
+			<!-- Toggling Error first will work -->
+			<!-- After Toggling Eror And Toggling it off when I press Success it does not 
+	   		raise Success because error raised is permanen because of the else-if
+
+			--> 
+			<!-- hides error if error is fale --> 
+			<p v-show="error">Error Raised which means 2526 47 26 27736259 56837 263 727225 3684874278 </p>
+			<p v-show="success">Success which means 2526 47 2 5282 3684874278 </p>
+			<!-- 
+				VSHOW VS V-IF DIFF:
+					V-IF WHEN TOGGLED THE ERROR COMPLETELY REMOVED FROM THE DOM			
+					V-SHOW HOWEVER WHEN FALSE IS JUST HAVING A VALUE OF THE DISPLAY PROPERTY SET 
+					TO 'none'
+
+					V-SHOW IS NOT TAKEN OFF THE DOM COMPLETELY
+			-->
+		</div>
+	</body>
+
+	<script src="app.js"></script>
+</html>

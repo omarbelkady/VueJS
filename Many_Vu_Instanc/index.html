@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        	<title>Mult Vue Instances</title>
+        	<link href="styles.css" rel="stylesheet" />
+        	<script src="https://unpkg.com/vue"></script>
+	</head>
+   	<body>
+		<h1>Many Vue Instances</h1>
+		<div id="vue-app-myinst">
+			<h2>{{ title }} </h2>
+			<p> {{ greet }} </p>
+		</div>
+
+		<div id="vue-app-mysecinst">
+			<!-- Remember for computed props it is just the name -->
+			<h2> {{ title }}</h2>
+			<p> {{ greet }} </p>
+			<button v-on:click="changingTheTitle">Changing the First Instance Title</button>
+			<!-- The above is how to communicate with two instances -->
+		</div>
+
+
+	<script src="app.js"></script>
+</html>
