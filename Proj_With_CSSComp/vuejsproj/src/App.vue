@@ -24,9 +24,11 @@ components: {
 
   }
 }
+//Say I have two elements and I want to style one I would use the scoped in my script tag
 </script>
+
+<style scoped>
 h1{
 	color: blue;
 }
-<style>
 </style>
