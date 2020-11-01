@@ -6,6 +6,7 @@
           <h3 v-show="pasclov.show">{{ pasclov.favHobby }}</h3>
       </li>
     </ul>
+    <button v-on:click="deletePasc">Delete PascLover</button>
   </div>
 </template>
 <script>
@@ -27,7 +28,6 @@ export default {
       this.pasc.pop();
     }
   }
-
 }
 </script>
 <style scoped>
