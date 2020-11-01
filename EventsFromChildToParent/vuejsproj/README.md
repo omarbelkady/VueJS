@@ -3,6 +3,17 @@
 > A Vue.js project
 
 
+## How do we transfer data
+```
+to transfer data from the parent(root component) to the child component I use a prop.
+to transfer data from the child(footer/header/pasclover component) to the parent(root component) I use an event.
+The component can listen out to when the event is emitted. When the event is emitted, it will react,
+the reaction can be to alter the data in the root component we are essentially changing the 
+state of the component. When a component changes its state/data it rerenders its template.
+When it does this the root component is transfer new data e.g. title down to the child component as props.
+```
+
+
 ## Build Setup
 
 ``` bash
