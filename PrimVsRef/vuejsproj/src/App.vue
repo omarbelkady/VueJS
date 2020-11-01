@@ -2,17 +2,16 @@
       <div>
           <app-header v-bind:title="title"></app-header>
           <app-pasc v-bind:pasc="pasc"></app-pasc>
-          <app-footer></app-footer>
+          <app-footer v-bind:title="title"></app-footer>
       </div>
 
 </template>
 
 <script>
-//Line 3 is where I pass in the title as a prop and I goto the component tag 
-
 //Now I have to import in my root component(App.vue) the header component
 //the app-header opening and closing tag along with the app-footer opening and closing is how you nest 
 //componenents
+//I passed in title as a prop on line 3
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Pasc from './components/Pasc.vue';
@@ -28,16 +27,16 @@ export default {
   data(){
     return {
         pasc:[
-            {name:'Nelan',favHobby: 'CodingAssembly',show: false},
+            {name:'Nelan', favHobby: 'CodingAssembly',show: false},
             {name:'CLover',favHobby: 'StudyingLLP',show: false},
             {name:'Pintos',favHobby: 'UnderstandingPintos',show: false},
             {name:'Compilers',favHobby: 'CS375FB',show: false}
         ],
-        title: "Vue PascLovers aka anyoneNameNelanNgo"
+        title: "Nelan Enjoys to Write Machine Code"
     }
-  }
 }
-
+//This is for primitive type. So imagine if I want to define Title located in my Header component and I
+//want to pass it down as a prop to my Header Component(Header.vue)
 </script>
 
 <style>
