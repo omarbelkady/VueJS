@@ -3,20 +3,21 @@
 > A Vue.js project
 
 
-## How do we transfer data
-```
-to transfer data from the parent(root component) to the child component I use a prop.
-to transfer data from the child(footer/header/pasclover component) to the parent(root component) I use an event.
-The component can listen out to when the event is emitted. When the event is emitted, it will react,
-the reaction can be to alter the data in the root component we are essentially changing the 
-state of the component. When a component changes its state/data it rerenders its template.
-When it does this the root component is transfer new data e.g. title down to the child component as props.
-```
 
-## Events
+## Event Bus
 ```
-we are essentially communicating from the header component to the footer component
-indirectly using the root component
+Before, when we changed the title in root component it would pass it down as props
+to component a(header component) and to component b(footer component). This resulted
+in component a&b to rerender their templates with the updated title. Before,
+we were communicating from component a to component b indirectly via the root component
+We can use an event bus which is just a vue instance and can be used to emit events, listen to 
+events which will as a result react to the events. An event bus on the other hand, can be imported
+to component a and component b and will enable us to communicate between each other without the parent 
+component(root component).
+
+The way it is done is by emitting an event bus on component a. Then I listen for the event in the event bus
+of component b.
+
 ```
 
 
