@@ -13,6 +13,12 @@ state of the component. When a component changes its state/data it rerenders its
 When it does this the root component is transfer new data e.g. title down to the child component as props.
 ```
 
+## Events
+```
+we are essentially communicating from the header component to the footer component
+indirectly using the root component
+```
+
 
 ## Build Setup
 
