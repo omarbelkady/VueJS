@@ -1,4 +1,4 @@
-VueJS Repo
+## VueJS Repo
 ```javascript
 //Empty Vue Default Template
 new Vue({
@@ -19,4 +19,10 @@ new Vue({
 ```
 ```
 Any pictures, audio, logos place in your assets folder in your vue proj
+```
+
+
+### Root Component
+```
+App.vue
 ```
