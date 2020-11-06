@@ -17,7 +17,6 @@ component(root component).
 
 The way it is done is by emitting an event bus on component a. Then I listen for the event in the event bus
 of component b.
-
 ```
 
 

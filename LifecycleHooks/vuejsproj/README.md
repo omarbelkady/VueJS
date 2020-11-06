@@ -55,10 +55,10 @@ it gives us access to the final lifecycle hook destroyed
 #### Lifecycle Hooks in chronological order
 - created: good place to go and fetch some data.
 - mounted: good place to manipulate the dom once it(component) has been mounted
-- beforeUpdate 
-- updated
-- beforeDestroyed
-- destroyed
+- beforeUpdate: this hook runs whenever we make change to our data and before the component rerenders with the new data to the DOM
+- updated: this hook run when a component's data is changed and causes the component to rerender with the new data to the DOM
+- beforeDestroyed: this hook runs before a component is destroyed
+- destroyed: this hook runs after a component is destroyed. This removes all directives, watchers and event listeners attached to the component
 
 
 #### How to forcefully update a Vue component so that it rerenders using the forceUpdate method
