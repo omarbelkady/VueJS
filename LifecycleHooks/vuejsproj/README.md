@@ -61,6 +61,48 @@ it gives us access to the final lifecycle hook destroyed
 - destroyed
 
 
+#### How to forcefully update a Vue component so that it rerenders using the forceUpdate method
+```html
+<template>
+  <div id="app">
+    <h1>{{Math.random()}}</h1>
+    <button @click="update">Force Update</button>
+  </div>
+</template>
+
+<script>
+export default {
+  methods:{
+    update(){
+      this.$forceUpdate();
+    }
+  }
+};
+</script>
+```
+
+### How to manually connect your vue instance to the DOM so that your component rerenders
+```html
+<template>
+  <div id="app">
+    <h1>{{Math.random()}}</h1>
+    <button @click="update">Force Update My Component</button>
+  </div>
+</template>
+
+<script>
+export default {
+  methods:{
+    update(){
+      this.$mount();
+    }
+  }
+};
+</script>
+```
+
+
+
 ## Build Setup
 
 ``` bash
