@@ -22,10 +22,69 @@ Any pictures, audio, logos place in your assets folder in your vue proj
 ```
 
 
+### VueJS Project Structure -> Failure to respect the outline will raise an erro
+```
+├── index.html
+├── main.js
+├── api
+│   └── ... # abstractions for making API requests
+├── components
+│   ├── App.vue
+│   └── ...
+└── store
+    ├── index.js          # where we assemble modules and export the store
+    ├── actions.js        # root actions
+    ├── mutations.js      # root mutations -------> Mutations are used to change the State
+    └── modules
+        ├── cart.js       # cart module
+        └── products.js   # products module
+```
+
 ### Root Component
 ```
 App.vue
 ```
+
+### Elements in iteration expect to have 'v-bind:key' directives.
+##### Before
+```js
+<select v-model="blog.author">
+    <option v-for="author in authors">{{ author }}</option>
+</select>
+```
+##### After
+```js
+<select v-model="blog.author">
+    <option v-for="author in authors" v-bind:key="author">{{ author }}</option>
+</select>
+```
+
+### Property or method is not defined on the instance but referenced during render
+```js
+<template>
+      <div v-theme="wide" id="show-the-blogs">
+         <h1>All The Blog Articles of the 27-375 32</h1>
+         <div v-for="ablog in blogs" class="single-blog">
+             <h2 v-cstsffb>{{ ablog.title }}</h2>
+             <article>{{ ablog.body }}</article>
+         </div>
+      </div>
+</template>
+```
+
+#### This is caused because of string formatting I just add a single quote
+```js
+<template>
+      <div v-theme="'wide'" id="show-the-blogs">
+         <h1>All The Blog Articles of the 27-375 32</h1>
+         <div v-for="ablog in blogs" class="single-blog">
+             <h2 v-cstsffb>{{ ablog.title }}</h2>
+             <article>{{ ablog.body }}</article>
+         </div>
+      </div>
+</template>
+```
+
 
 ### How to run your app on a specific port(55732: LLPFB)
 Step 1: create a file named vue.config.js
