@@ -21,8 +21,16 @@ new Vue({
 Any pictures, audio, logos place in your assets folder in your vue proj
 ```
 
+### Why is V-model attribute used a lot when dealing with data
+```
+V-model is used to perform two-way data binding between what the user inputted and the
+component. This is done so that any changes made on the input will be reflected in the 
+data property of the component. The reason why it is called v-model is because of the v-shaped
+process it goes down to be verified(testing) and up it goes to be validated(development) similar to a waterfall.
+```
 
-### VueJS Project Structure -> Failure to respect the outline will raise an erro
+
+### VueJS Project Structure -> Failure to respect the outline will raise an error
 ```
 ├── index.html
 ├── main.js
