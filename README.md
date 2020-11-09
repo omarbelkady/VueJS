@@ -29,6 +29,11 @@ data property of the component. The reason why it is called v-model is because o
 process it goes down to be verified(testing) and up it goes to be validated(development) similar to a waterfall.
 ```
 
+### What Directory/File Does What
+- public folder: static directory 
+- index.html: accessing it through a server
+- components: accessing it within your application
+
 
 ### VueJS Project Structure -> Failure to respect the outline will raise an error
 ```
