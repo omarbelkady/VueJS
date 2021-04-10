@@ -1,4 +1,15 @@
 ## VueJS Repo
+### How To Create a Vue Project using the UI online
+```bash
+vue ui
+```
+
+### How To Create A New Hello World Vue Project using the Vue CLI
+```bash
+vue create hello-world
+```
+
+### Default Vue Template
 ```javascript
 //Empty Vue Default Template
 new Vue({
