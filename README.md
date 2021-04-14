@@ -9,6 +9,16 @@ vue ui
 vue create hello-world
 ```
 
+### Run your app in the browser aka locally
+```bash
+npm run serve
+```
+
+### Deploy app
+```bash
+npm run build
+```
+
 ### Default Vue Template
 ```javascript
 //Empty Vue Default Template
@@ -48,20 +58,20 @@ process it goes down to be verified(testing) and up it goes to be validated(deve
 
 ### VueJS Project Structure -> Failure to respect the outline will raise an error
 ```
-├── index.html
-├── main.js
-├── api
-│   └── ... # abstractions for making API requests
-├── components
-│   ├── App.vue
-│   └── ...
-└── store
-    ├── index.js          # where we assemble modules and export the store
-    ├── actions.js        # root actions
-    ├── mutations.js      # root mutations -------> Mutations are used to change the State
-    └── modules
-        ├── cart.js       # cart module
-        └── products.js   # products module
+├── README.md
+├── node_modules ----- installed npm packages
+├── package.json ----- project dependencies
+├── .gitignore ------- list the files you do not want git to track here
+├── public ----------- static assets
+│   ├── favicon.ico
+│   ├── index.html
+└── src
+    ├── assets ----- contains your assets e.g. logo
+    ├── App.vue ---- main Vue Component aka Root component in ReactJS(App.js)
+    ├── main.js ---- main project file which bootstraps the Vue application e.g. index.js in ReactJS
+    ├── components ----- Your Vue Components
+        ├── Home.jsx
+├── babel.config.js ------- configuration file for babel
 ```
 
 ### Root Component

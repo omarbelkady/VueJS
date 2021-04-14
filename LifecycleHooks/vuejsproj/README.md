@@ -53,8 +53,10 @@ it gives us access to the final lifecycle hook destroyed
 ```
 
 #### Lifecycle Hooks in chronological order
-- created: good place to go and fetch some data.
-- mounted: good place to manipulate the dom once it(component) has been mounted
+- beforeCreate:  called before the app is created
+- created: good place to go and fetch some data and called After the app has been created
+- beforeMount: called before the app is mounted on the DOM
+- mounted: good place to manipulate the dom once it(component) has been mounted aka this is called after the app is mounted to the DOM
 - beforeUpdate: this hook runs whenever we make change to our data and before the component rerenders with the new data to the DOM
 - updated: this hook run when a component's data is changed and causes the component to rerender with the new data to the DOM
 - beforeDestroyed: this hook runs before a component is destroyed
