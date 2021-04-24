@@ -5,21 +5,29 @@ vue ui
 ```
 
 ### How To Create A New Hello World Vue Project using the Vue CLI
+
 ```bash
 vue create hello-world
 ```
 
+### For Typescript and other features select:
+
+- Manually select Features
+
 ### Run your app in the browser aka locally
+
 ```bash
 npm run serve
 ```
 
 ### Deploy app
+
 ```bash
 npm run build
 ```
 
 ### Default Vue Template
+
 ```javascript
 //Empty Vue Default Template
 new Vue({
@@ -43,6 +51,7 @@ Any pictures, audio, logos place in your assets folder in your vue proj
 ```
 
 ### Why is V-model attribute used a lot when dealing with data
+
 ```
 V-model is used to perform two-way data binding between what the user inputted and the
 component. This is done so that any changes made on the input will be reflected in the 
@@ -51,12 +60,14 @@ process it goes down to be verified(testing) and up it goes to be validated(deve
 ```
 
 ### What Directory/File Does What
+
 - public folder: static directory 
 - index.html: accessing it through a server
 - components: accessing it within your application
 
 
 ### VueJS Project Structure -> Failure to respect the outline will raise an error
+
 ```
 ├── README.md
 ├── node_modules ----- installed npm packages
@@ -75,18 +86,23 @@ process it goes down to be verified(testing) and up it goes to be validated(deve
 ```
 
 ### Root Component
+
 ```
 App.vue
 ```
 
 ### Elements in iteration expect to have 'v-bind:key' directives.
+
 ##### Before
+
 ```js
 <select v-model="blog.author">
     <option v-for="author in authors">{{ author }}</option>
 </select>
 ```
+
 ##### After
+
 ```js
 <select v-model="blog.author">
     <option v-for="author in authors" v-bind:key="author">{{ author }}</option>
@@ -94,6 +110,7 @@ App.vue
 ```
 
 ### Property or method is not defined on the instance but referenced during render
+
 ```js
 <template>
       <div v-theme="wide" id="show-the-blogs">
@@ -107,6 +124,7 @@ App.vue
 ```
 
 #### This is caused because of string formatting I just add a single quote
+
 ```js
 <template>
       <div v-theme="'wide'" id="show-the-blogs">
@@ -119,8 +137,8 @@ App.vue
 </template>
 ```
 
-
 ### How to run your app on a specific port(55732: LLPFB)
+
 Step 1: create a file named vue.config.js
 Step 2: place the following script in it
 ```js
@@ -132,6 +150,7 @@ module.exports={
 ```
 
 ### To change the port of your application dynamically
+
 ```bash
 npm run serve -- --port 8080
 ```
@@ -140,12 +159,15 @@ npm run serve -- --port 8080
 ### Form Handling
 
 #### Step 0: install vee-validate
+
 ```bash
 npm i vee-validate
 ```
 
 #### Step 1: Incorporate in our js file
+
 main.js
+
 ```js
 import Vue from 'vue';
 import VeeValidate from 'vee-validate';
