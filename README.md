@@ -77,11 +77,12 @@ process it goes down to be verified(testing) and up it goes to be validated(deve
 │   ├── favicon.ico
 │   ├── index.html
 └── src
-    ├── assets ----- contains your assets e.g. logo
-    ├── App.vue ---- main Vue Component aka Root component in ReactJS(App.js)
-    ├── main.js ---- main project file which bootstraps the Vue application e.g. index.js in ReactJS
+    ├── assets ----- contains your assets e.g. logo, images, fonts, etc.
+    ├── App.vue ---- main Vue Component aka Root component in ReactJS(App.js)  
+    ├── main.js ---- main project file which bootstraps the Vue application e.g. index.js in ReactJS .... entry point for your app.
     ├── components ----- Your Vue Components
         ├── Home.jsx
+    └── /views ----- Folder for your page components
 ├── babel.config.js ------- configuration file for babel
 ```
 
